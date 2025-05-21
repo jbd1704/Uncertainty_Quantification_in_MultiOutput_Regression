@@ -1,0 +1,34 @@
+Package: Algorithmique
+Title: Conformal Prediction in High Dimensions
+Version: 0.0.0.9000
+Authors@R: 
+    c(
+        person(given = "Jaad", family = "BELHOUARI", email = "jaad.belhouari@gmail.com", role = "aut"),
+        person(given = "Ayman", family = "MIMOUN", email = "aym.mimoun@gmail.com", role = "aut"),
+        person(given = "Fatima Zahra", family = "HANNOU", email = "fatimzahrahannou@gmail.com", role = c("aut", "cre"))
+    )
+Description: Implements conformal prediction techniques in high-dimensional settings,
+    including model training, uncertainty quantification, and visual diagnostics using gradient boosting methods.
+License: AGPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+LinkingTo: 
+    Rcpp
+Depends: 
+    R (>= 3.5.0)
+Imports:
+    Rcpp,
+    R6,
+    caret,
+    xgboost,
+    data.table
+Suggests: 
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+LazyData: true
+LazyDataCompression: xz
+UseDynLib: Algorithmique
